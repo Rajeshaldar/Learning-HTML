@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    margin: 0px 10px 20px 10px;
+  }
+.menu {
+    display: grid;
+    background: none;
+    border: none;
+    gap: 4px;
+    border: 5px 5px 5px 5px;
+    margin-left: 4px;
+    margin-right: 4px;
+    color: black;
+    padding: 5px;
+    align-items: center;
+  }
+.line {
+    height: 3px;
+    width: 21px;
+    background-color: #313131;
+  }
+.wikipedia-logo{
+    height: 60; 
+    width: 60;
+}

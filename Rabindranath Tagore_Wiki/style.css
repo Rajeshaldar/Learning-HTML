@@ -1,0 +1,32 @@
+
+a:link {
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px 60px 50px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.menu{
+    display: grid;
+    flex-direction: column;
+    gap:2px
+
+}
+
+.line{
+    height: 2px;
+    width: 20px;
+    background-color: #313131;
+ 
+}
+#logo{
+    text-decoration: none;
+    color: #18cf7c;
+}

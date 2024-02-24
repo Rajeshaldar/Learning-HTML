@@ -1,0 +1,14 @@
+.text{
+    font-family: 'inter', sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    padding-top: 5em;
+    font-weight: 900;
+}
+.box{
+    background-image: url(526200.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}

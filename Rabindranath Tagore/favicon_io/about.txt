@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Tiro Kannada
+- Font Author: Copyright 2020 The Indigo Project Authors (https://github.com/TiroTypeworks/Indigo)
+- Font Source: http://fonts.gstatic.com/s/tirokannada/v6/CSR44ztKmvqaDxEDJFY7CIYKSPl6tOU9Eg.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
