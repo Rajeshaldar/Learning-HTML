@@ -1,0 +1,3783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bazaar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!------------------------ CSS file -------------------------------->
+  <link rel="stylesheet" href="style.css" />
+
+  <!------------------------ Favicon -------------------------------->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png" />
+  <!-------------------------------Font link------------------------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700; 800;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!--======================== Preloader Section ====================================-->
+  <div id="preloader"></div>
+  <div class="overlay" data-overlay></div>
+
+  <div class="modal" data-modal>
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <!------------------------ News letter section -------------------------------->
+    <div class="modal-content">
+      <button class="modal-close-btn" data-modal-close>
+        <i class="fa-solid fa-circle-xmark"></i>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/newsletter.jpg" alt="subscribe newsletter" width="400" height="400" />
+      </div>
+
+      <div class="newsletter">
+        <form action="#">
+          <div class="newsletter-header">
+            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+
+            <p class="newsletter-desc">
+              Subscribe the <b>Bazaar</b> to get latest products and discount
+              update.
+            </p>
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="Email Address" required />
+          <button type="submit" class="btn-newsletter">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-------====================================== Header Section =======================================----->
+  <header>
+    <div class="header-main">
+      <div class="container">
+        <!-------------------------Bazaar Logo----------------------------------->
+        <a href="#" class="header-logo">
+          <img src="./assets/Logo.png" alt="Bazaar's logo" width="120px" height="30px" />
+        </a>
+
+        <!-------------------------Search Bar ----------------------------------->
+        <div class="header-search-container">
+          <input type="search" name="search" class="search-field" placeholder="Search in Bazaar" />
+          <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <!------------------------- Navagation Button ----------------------------------->
+        <div class="header-user-action">
+          <button class="action-btn">
+            <i class="fa-solid fa-house"></i>
+          </button>
+
+          <button class="action-btn">
+            <div class="action-btn-submenu-dropdown-panel">
+              <a href="#" class="menu-title"><i class="fa-solid fa-circle-user"></i></a>
+              <div class="action-btn-submenu">
+                <ul class="action-btn-submenu-dropdown-panel-list">
+                  <li>
+                    <a href="#"><i class="fa-solid fa-user"></i> My Profile</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-location-dot"></i> Manage Address</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-credit-card"></i> Manage Payment</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i> Orders</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-heart"></i> Wishlist</a>
+                  </li>
+                  <li>
+                    <a href="#""><i class=" fa-solid fa-rotate-left"></i> Return</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-money-check-dollar"></i> Gift Cards</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-bell"></i> Notification</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </button>
+
+          <button class="action-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-------====================================== NavBar Section for Desktop =======================================----->
+    <nav class="header-navigation-menu">
+      <div class="container">
+        <ul class="desktop-menu-category-list">
+          <li class="menu-category">
+            <a href="#" class="menu-title">
+              <p>Baby Products <i class="fa-solid fa-chevron-down"></i></p>
+            </a>
+            <ul class="dropdown-list">
+              <li class="panel-list-item"><a href="#">Bath Tub</a></li>
+              <li class="panel-list-item"><a href="#">Bath Wash</a></li>
+              <li class="panel-list-item"><a href="#">Cloth (Boy)</a></li>
+              <li class="panel-list-item"><a href="#">Cloth (Girl)</a></li>
+              <li class="panel-list-item"><a href="#">Wipes</a></li>
+              <li class="panel-list-item"><a href="#">Bibs</a></li>
+              <li class="panel-list-item"><a href="#">Blankets</a></li>
+              <li class="panel-list-item"><a href="#">Bottles and nipples</a></li>
+              <li class="panel-list-item"><a href="#">Breast Pump</a></li>
+              <li class="panel-list-item"><a href="#">Changing Mat</a></li>
+              <li class="panel-list-item"><a href="#">Diaper Rash Cream</a></li>
+              <li class="panel-list-item"><a href="#">Diapering</a></li>
+              <li class="panel-list-item"><a href="#">Diapers</a></li>
+              <li class="panel-list-item"><a href="#">Feeding</a></li>
+              <li class="panel-list-item"><a href="#">Nail clippers</a></li>
+              <li class="panel-list-item"><a href="#">Stroller</a></li>
+              <li class="panel-list-item"><a href="#">Thermometer</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">
+              <p>Beauty Products <i class="fa-solid fa-chevron-down"></i></p>
+            </a>
+
+            <ul class="dropdown-list">
+              <li class="panel-list-item"><a href="#">Bath Tub</a></li>
+              <li class="panel-list-item"><a href="#">Bath Wash</a></li>
+              <li class="panel-list-item"><a href="#">Cloth (Boy)</a></li>
+              <li class="panel-list-item"><a href="#">Cloth (Girl)</a></li>
+              <li class="panel-list-item"><a href="#">Wipes</a></li>
+              <li class="panel-list-item"><a href="#">Bibs</a></li>
+              <li class="panel-list-item"><a href="#">Blankets</a></li>
+              <li class="panel-list-item"><a href="#">Bottles and nipples</a></li>
+              <li class="panel-list-item"><a href="#">Breast Pump</a></li>
+              <li class="panel-list-item"><a href="#">Changing Mat</a></li>
+              <li class="panel-list-item"><a href="#">Diaper Rash Cream</a></li>
+              <li class="panel-list-item"><a href="#">Diapering</a></li>
+              <li class="panel-list-item"><a href="#">Diapers</a></li>
+              <li class="panel-list-item"><a href="#">Feeding</a></li>
+              <li class="panel-list-item"><a href="#">Nail clippers</a></li>
+              <li class="panel-list-item"><a href="#">Stroller</a></li>
+              <li class="panel-list-item"><a href="#">Thermometer</a></li>
+            </ul>
+          </li>
+
+
+          <li class="menu-category"><a href="#" class="menu-title">
+              <p>Books <i class="fa-solid fa-chevron-down"></i></p>
+            </a>
+
+            <ul class="dropdown-list">
+              <li class="panel-list-item"><a href="#">Action & Adventure</a></li>
+              <li class="panel-list-item"><a href="#">Arts, Film & Photography</a></li>
+              <li class="panel-list-item"><a href="#">Biographies, Diaries</a></li>
+              <li class="panel-list-item"><a href="#">Business & Economics</a></li>
+              <li class="panel-list-item"><a href="#">Children's Books</a></li>
+              <li class="panel-list-item"><a href="#">Computers & Internet</a></li>
+              <li class="panel-list-item"><a href="#">Crafts, Hobbies & Home</a></li>
+              <li class="panel-list-item"><a href="#">Crime, Thriller & Mystery</a></li>
+              <li class="panel-list-item"><a href="#">Engineering</a></li>
+              <li class="panel-list-item"><a href="#">Exam Preparation</a></li>
+              <li class="panel-list-item"><a href="#">Health, Fitness & Nutrition</a></li>
+              <li class="panel-list-item"><a href="#">Historical Fiction</a></li>
+              <li class="panel-list-item"><a href="#">History</a></li>
+              <li class="panel-list-item"><a href="#">Law</a></li>
+              <li class="panel-list-item"><a href="#">Medicine and Health Sciences
+                  Textbooks</a></li>
+              <li class="panel-list-item"><a href="#">Maps & Atlases</a></li>
+              <li class="panel-list-item"><a href="#">Religion & Spirituality</a></li>
+              <li class="panel-list-item"><a href="#">School Books</a></li>
+              <li class="panel-list-item"><a href="#">Science and Mathematics Textbooks</a>
+              </li>
+              <li class="panel-list-item"><a href="#">Politics</a></li>
+              <li class="panel-list-item"><a href="#">Teen & Young Adult</a></li>
+              <li class="panel-list-item"><a href="#">Textbooks & Study Guides</a></li>
+              <li class="panel-list-item"><a href="#">Travel & Tourism</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-category"><a href="#" class="menu-title">
+              <p>Electronics <i class="fa-solid fa-chevron-down"></i></p>
+            </a>
+            <ul class="dropdown-list">
+              <li class="panel-list-item"><a href="#">Accessories</a></li>
+              <li class="panel-list-item"><a href="#">Batteries</a></li>
+              <li class="panel-list-item"><a href="#">Battery Chargers</a></li>
+              <li class="panel-list-item"><a href="#">Cameras & Photography</a></li>
+              <li class="panel-list-item"><a href="#">Computers & Accessories</a></li>
+              <li class="panel-list-item"><a href="#">Gaming Console</a></li>
+              <li class="panel-list-item"><a href="#">GPS & Accessories</a></li>
+              <li class="panel-list-item"><a href="#">Headphones & Earbuds</a></li>
+              <li class="panel-list-item"><a href="#">Home Theater, TV & Video</a></li>
+              <li class="panel-list-item"><a href="#">Microphone</a></li>
+              <li class="panel-list-item"><a href="#">Mobiles & Accessories</a></li>
+              <li class="panel-list-item"><a href="#">Portable Media Players</a></li>
+              <li class="panel-list-item"><a href="#">Power Accessories</a></li>
+              <li class="panel-list-item"><a href="#">Radio Communication</a></li>
+              <li class="panel-list-item"><a href="#">Security Camera</a></li>
+              <li class="panel-list-item"><a href="#">Speaker</a></li>
+              <li class="panel-list-item"><a href="#">Tablets</a></li>
+              <li class="panel-list-item"><a href="#">Telephones & Accessories</a></li>
+              <li class="panel-list-item"><a href="#">Vehicle Electronics</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-category"><a href="#" class="menu-title">
+              <p>Furniture <i class="fa-solid fa-chevron-down"></i></p>
+            </a>
+            <ul class="dropdown-list">
+              <li class="panel-list-item"><a href="#">Bar furniture</a></li>
+              <li class="panel-list-item"><a href="#">Bed</a></li>
+              <li class="panel-list-item"><a href="#">Cabinet</a></li>
+              <li class="panel-list-item"><a href="#">Cantilever Chair</a></li>
+              <li class="panel-list-item"><a href="#">Centre Table</a></li>
+              <li class="panel-list-item"><a href="#">Chair</a></li>
+              <li class="panel-list-item"><a href="#">Desk</a></li>
+              <li class="panel-list-item"><a href="#">Dining</a></li>
+              <li class="panel-list-item"><a href="#">Dressing Table</a></li>
+              <li class="panel-list-item"><a href="#">Lawson couch</a></li>
+              <li class="panel-list-item"><a href="#">Recliners</a></li>
+              <li class="panel-list-item"><a href="#">Sofa</a></li>
+              <li class="panel-list-item"><a href="#">Table</a></li>
+              <li class="panel-list-item"><a href="#">TV Stand</a></li>
+              <li class="panel-list-item"><a href="#">Wardrobe</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-category"><a href="#" class="menu-title">
+              <p>Glasses & Lens <i class="fa-solid fa-chevron-down"></i></p>
+            </a>
+            <ul class="dropdown-list">
+              <li class="panel-list-item"><a href="#">Brendel eyeglasses</a></li>
+              <li class="panel-list-item"><a href="#">Computer glasses</a></li>
+              <li class="panel-list-item"><a href="#">Contact lenses</a></li>
+              <li class="panel-list-item"><a href="#">Eyeglasses</a></li>
+              <li class="panel-list-item"><a href="#">Photochromic</a></li>
+              <li class="panel-list-item"><a href="#">Progressive lenses</a></li>
+              <li class="panel-list-item"><a href="#">Reading glasses</a></li>
+              <li class="panel-list-item"><a href="#">Shamir lenses</a></li>
+              <li class="panel-list-item"><a href="#">Single vision</a></li>
+              <li class="panel-list-item"><a href="#">Sunglasses</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-category"><a href="#" class="menu-title">
+              <p>Perfumes <i class="fa-solid fa-chevron-down"></i></p>
+            </a>
+            <ul class="dropdown-list">
+              <li class="panel-list-item"><a href="#">Deodorant</a></li>
+              <li class="panel-list-item"><a href="#">Deodorants & Antiperspirants</a></li>
+              <li class="panel-list-item"><a href="#">Eau de Cologne</a></li>
+              <li class="panel-list-item"><a href="#">Eau de Parfum</a></li>
+              <li class="panel-list-item"><a href="#">Eau de Toilette</a></li>
+              <li class="panel-list-item"><a href="#">Fragrance Sets</a></li>
+              <li class="panel-list-item"><a href="#">Perfume</a></li>
+              <li class="panel-list-item"><a href="#">Women's Body Sprays & Mists</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-category"><a href="#" class="menu-title">
+              <p>Toys <i class="fa-solid fa-chevron-down"></i></p>
+            </a>
+            <ul class="dropdown-list">
+              <li class="panel-list-item"><a href="#">Action Toys</a></li>
+              <li class="panel-list-item"><a href="#">Art and Craft</a></li>
+              <li class="panel-list-item"><a href="#">Baby Toys</a></li>
+              <li class="panel-list-item"><a href="#">Dolls & Doll Houses</a></li>
+              <li class="panel-list-item"><a href="#">Hobby Kits</a></li>
+              <li class="panel-list-item"><a href="#">Indoor Games</a></li>
+              <li class="panel-list-item"><a href="#">LCD Writing Pads</a></li>
+              <li class="panel-list-item"><a href="#">Learning and Educational</a></li>
+              <li class="panel-list-item"><a href="#">Musical Toys</a></li>
+              <li class="panel-list-item"><a href="#">Outdoor Toys</a></li>
+              <li class="panel-list-item"><a href="#">Puzzles and Cubes</a></li>
+              <li class="panel-list-item"><a href="#">Soft Toys</a></li>
+              <li class="panel-list-item"><a href="#">Sports Toys</a></li>
+              <li class="panel-list-item"><a href="#">Toy Vehicles</a></li>
+              <li class="panel-list-item"><a href="#">Tricycles and Rideons</a></li>
+            </ul>
+          </li>
+
+
+          <li class="menu-category"><a href="#" class="menu-title">
+              <p>Watches <i class="fa-solid fa-chevron-down"></i></p>
+            </a>
+            <ul class="dropdown-list">
+              <li class="panel-list-item"><a href="#">Aviator watch</a></li>
+              <li class="panel-list-item"><a href="#">Chronographs</a></li>
+              <li class="panel-list-item"><a href="#">Digital watches</a></li>
+              <li class="panel-list-item"><a href="#">Dive watch</a></li>
+              <li class="panel-list-item"><a href="#">Field watches</a></li>
+              <li class="panel-list-item"><a href="#">Hybrid watches</a></li>
+              <li class="panel-list-item"><a href="#">Kinetic watch</a></li>
+              <li class="panel-list-item"><a href="#">Military watches</a></li>
+              <li class="panel-list-item"><a href="#">Racing watch</a></li>
+              <li class="panel-list-item"><a href="#">Smartwatch</a></li>
+            </ul>
+          </li>
+
+
+          <!------------------------ Category for Men-------------------------------->
+          <li class="menu-category"><a href="#" class="menu-title">
+              <p>Men's <i class="fa-solid fa-chevron-down"></i></p>
+            </a>
+            <ul class="dropdown-list">
+              <span>
+                <p>Topwear</p>
+                <hr>
+              </span>
+              <li class="panel-list-item"><a href="#">Blazers</a></li>
+              <li class="panel-list-item"><a href="#">Casual Shirt</a></li>
+              <li class="panel-list-item"><a href="#">Ethnic Set</a></li>
+              <li class="panel-list-item"><a href="#">Formal Shirt</a></li>
+              <li class="panel-list-item"><a href="#">Hoodie</a></li>
+              <li class="panel-list-item"><a href="#">Jacket</a></li>
+              <li class="panel-list-item"><a href="#">Kurta</a></li>
+              <li class="panel-list-item"><a href="#">Panjabi</a></li>
+              <li class="panel-list-item"><a href="#">Sports Wear</a></li>
+              <li class="panel-list-item"><a href="#">Suit</a></li>
+              <li class="panel-list-item"><a href="#">T-Shirt</a></li>
+              <span>
+                <hr>
+                <p>Bottomwear</p>
+                <hr>
+              </span>
+              <li class="panel-list-item"><a href="#">Cargo</a></li>
+              <li class="panel-list-item"><a href="#">Casual Pant</a></li>
+              <li class="panel-list-item"><a href="#">Ethnic Pyjama</a></li>
+              <li class="panel-list-item"><a href="#">Formal Pant</a></li>
+              <li class="panel-list-item"><a href="#">Jeans</a></li>
+              <li class="panel-list-item"><a href="#">Pyjamas & Lounge pants</a></li>
+              <li class="panel-list-item"><a href="#">Shorts</a></li>
+              <li class="panel-list-item"><a href="#">Track pants</a></li>
+              <li class="panel-list-item"><a href="#">Trousers</a></li>
+              <li class="panel-list-item"><a href="#">Underwear</a></li>
+            </ul>
+          </li>
+
+          <!------------------------ Category for Women-------------------------------->
+          <li class="menu-category"><a href="#" class="menu-title">
+              <p>Women's <i class="fa-solid fa-chevron-down"></i></p>
+            </a>
+            <ul class="dropdown-list">
+              <span>
+                <p>Topwear</p>
+                <hr>
+              </span>
+              <li class="panel-list-item"><a href="#">Blouse</a></li>
+              <li class="panel-list-item"><a href="#">Cardigan</a></li>
+              <li class="panel-list-item"><a href="#">Casual Shirts</a></li>
+              <li class="panel-list-item"><a href="#">Dupatta</a></li>
+              <li class="panel-list-item"><a href="#">Ethnic Dresses</a></li>
+              <li class="panel-list-item"><a href="#">Formal Shirt</a></li>
+              <li class="panel-list-item"><a href="#">Gowns</a></li>
+              <li class="panel-list-item"><a href="#">Kurta Sets & Salwar Suits</a></li>
+              <li class="panel-list-item"><a href="#">Lehenga Cholis</a></li>
+              <li class="panel-list-item"><a href="#">Sarees</a></li>
+              <li class="panel-list-item"><a href="#">Sweater</a></li>
+              <li class="panel-list-item"><a href="#">Top</a></li>
+              <li class="panel-list-item"><a href="#">T-shirt</a></li>
+              <li class="panel-list-item"><a href="#">Underwear</a></li>
+              <span>
+                <hr>
+                <p>Bottomwear</p>
+                <hr>
+              </span>
+              <li class="panel-list-item"><a href="#">Casual Pant</a></li>
+              <li class="panel-list-item"><a href="#">Formal Pant</a></li>
+              <li class="panel-list-item"><a href="#">Jeans</a></li>
+              <li class="panel-list-item"><a href="#">Jeggings & Tights</a></li>
+              <li class="panel-list-item"><a href="#">Leggings & Patialas</a></li>
+              <li class="panel-list-item"><a href="#">Skirts</a></li>
+              <li class="panel-list-item"><a href="#">Track Pants</a></li>
+              <li class="panel-list-item"><a href="#">Trousers & Capris</a></li>
+              <li class="panel-list-item"><a href="#">Winter Wear</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-category"><a href="#" class="menu-title">
+              <p>Footwere <i class="fa-solid fa-chevron-down"></i></p>
+            </a>
+            <ul class="dropdown-list">
+              <span>
+                <p>Men's</p>
+                <hr>
+              </span>
+              <li class="panel-list-item"><a href="#">Athletic shoes</a></li>
+              <li class="panel-list-item"><a href="#">Boots</a></li>
+              <li class="panel-list-item"><a href="#">Casual shoes</a></li>
+              <li class="panel-list-item"><a href="#">Safety Shoe</a></li>
+              <li class="panel-list-item"><a href="#">Sandals</a></li>
+              <li class="panel-list-item"><a href="#">Slippers</a></li>
+              <li class="panel-list-item"><a href="#">Sneakers</a></li>
+              <li class="panel-list-item"><a href="#">Blazers</a></li>
+              <span>
+                <hr>
+                <p>Women's</p>
+                <hr>
+              </span>
+              <li class="panel-list-item"><a href="#">Ballet Flats</a></li>
+              <li class="panel-list-item"><a href="#">Boots</a></li>
+              <li class="panel-list-item"><a href="#">Espadrilles</a></li>
+              <li class="panel-list-item"><a href="#">Flip Flops</a></li>
+              <li class="panel-list-item"><a href="#">Heels</a></li>
+              <li class="panel-list-item"><a href="#">Loafers</a></li>
+              <li class="panel-list-item"><a href="#">Mules</a></li>
+              <li class="panel-list-item"><a href="#">Sandals</a></li>
+              <li class="panel-list-item"><a href="#">Sneakers</a></li>
+              <li class="panel-list-item"><a href="#">Wedges</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-------====================================== NavBar For Mobile and all small screen =======================================---->
+    <div class="mobile-bottom-navigation">
+
+      <!-------------------Three line bar----------------->
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <!------------------------Order---------------->
+      <button class="action-btn">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="count">0</span>
+      </button>
+
+      <!----------------------Home------------------>
+      <button class="action-btn">
+        <i class="fa-solid fa-house"></i>
+      </button>
+
+      <!----------------------Cart------------------>
+      <button class="action-btn">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="count">0</span>
+      </button>
+
+      <!----------------------More------------------>
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <i class="fa-solid fa-list"></i>
+      </button>
+
+    </div>
+
+    <!-------====================================== SIde Menu Section for Mobile =======================================----->
+    <nav class="mobile-navigation-menu has-scroolbar" data-mobile-menu>
+
+      <!------------------------ Closable Menu-------------------------------->
+      <div class="menu-top">
+        <h2 class="menu-title"><i class="fa-solid fa-bars"></i> Menu</h2>
+        <button class="menu-close-btn" data-mobile-close-btn>
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+        <!------------------------ Closable Menu - Home Button-------------------------------->
+        <li class="menu-category">
+          <a href="#" class="menu-title"><i class="fa-solid fa-house"></i> Home</a>
+        </li>
+
+        <!------------------------ Closable Menu - My Profile Button -------------------------------->
+        <li class="menu-category">
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title"><i class="fa-solid fa-user"></i> My Profile</p>
+            <div>
+              <i class="fa-solid fa-square-plus add-icon"></i>
+              <i class="fa-solid fa-square-minus remove-icon"></i>
+            </div>
+          </button>
+          <!------------------------ My Profile content -------------------------------->
+          <ul class="submenu-category-list " data-accordion>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title"><i class="fa-solid fa-user"></i> My Profile</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title"><i class="fa-solid fa-location-dot"></i> Manage Address</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title"><i class="fa-solid fa-credit-card"></i> Manage Payment</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title"><i class="fa-solid fa-bag-shopping"></i> Orders</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title"><i class="fa-solid fa-heart"></i> Wishlist</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title"><i class="fa-solid fa-rotate-left"></i> Return</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title"><i class="fa-solid fa-money-check-dollar"></i> Gift Cards</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title"><i class="fa-solid fa-bell"></i> Notification</a>
+            </li>
+            <li class="submenu-category">
+              <a href="#" class="submenu-title"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+            </li>
+          </ul>
+
+          <!------------------------ Closable Menu - Category Button -------------------------------->
+        <li class="menu-category">
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title"><i class="fa-solid fa-list"></i> Category</p>
+
+            <div>
+              <i class="fa-solid fa-square-plus add-icon"></i>
+              <i class="fa-solid fa-square-minus remove-icon"></i>
+            </div>
+          </button>
+          <!------------------------ Closable Menu - Weekend Discount section -------------------------------->
+        <li class="menu-category">
+          <a href="#" class="menu-title"><i class="fa-solid fa-tag"></i> Weekend Discount</a>
+        </li>
+
+        <!------------------------ Closable Menu - Today's Deals section -------------------------------->
+        <li class="menu-category">
+          <a href="#" class="menu-title"><i class="fa-solid fa-calendar-day"></i> Today's Deals</a>
+        </li>
+      </ul>
+
+      <!------------------------ Closable Menu - Language section -------------------------------->
+      <div class="menu-bottom">
+        <ul class="menu-category-list">
+          <li class="menu-category">
+            <button class="accordion-menu " data-accordion-btn>
+              <p class="menu-title"><i class="fa-solid fa-language"></i> Language</p>
+              <i class="fa-solid fa-circle-arrow-left lang-icon"></i>
+            </button>
+            <!------------------------ Language section -------------------------------->
+            <ul class="submenu-category-list " data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Espa&ntilde;ol</a>
+              </li>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Fran&ccedil;ais</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="logo">
+        <img src="./assets/Logo.png" alt="Website's Logo" width="100px">
+      </div>
+    </nav>
+  </header>
+
+  <!-------====================================== Main Section =======================================----->
+  <main>
+    <!-------------------------------- Category ------------------------------------------------->
+    <div class="category">
+      <div class="container">
+        <div class="category-item-container has-scrollbar">
+          <!--------------------------------Category - Baby Products------------------------------------------------->
+          <div class="category-item">
+            <div class="category-img">
+              <img src="./assets/icons/babyproducts.png" alt="Icon of Baby Products" width="25px">
+            </div>
+            <div class="category-content-box">
+              <h2 class="category-title">Baby Products</h2>
+            </div>
+
+          </div>
+
+          <!--------------------------------Category - Beauty Products------------------------------------------------->
+          <div class="category-item">
+            <div class="category-img">
+              <img src="./assets/icons/beauty.png" alt="Icon of Beauty Products" width="25px">
+            </div>
+            <div class="category-content-box">
+              <h2 class="category-title">Beauty Products</h2>
+            </div>
+          </div>
+
+          <!--------------------------------Category - Books------------------------------------------------->
+          <div class="category-item">
+            <div class="category-img">
+              <img src="./assets/icons/Books.png" alt="Icon of Books" width="25px">
+            </div>
+            <div class="category-content-box">
+              <h2 class="category-title">Books</h2>
+            </div>
+          </div>
+
+          <!--------------------------------Category - Electronics------------------------------------------------->
+          <div class="category-item">
+            <div class="category-img">
+              <img src="./assets/icons/electronics.png" alt="Icon of Electronics" width="25px">
+            </div>
+            <div class="category-content-box">
+              <h2 class="category-title">Electronics</h2>
+            </div>
+          </div>
+
+          <!--------------------------------Category - Eyeglasses------------------------------------------------->
+          <div class="category-item">
+            <div class="category-img">
+              <img src="./assets/icons/eyeglasses.png" alt="Icon of Eyeglasses" width="25px">
+            </div>
+            <div class="category-content-box">
+              <h2 class="category-title">Glasses & Lens</h2>
+            </div>
+          </div>
+
+          <!--------------------------------Category - Fashion------------------------------------------------->
+          <div class="category-item">
+            <div class="category-img">
+              <img src="./assets/icons/fashion.png" alt="Icon of Fashion" width="25px">
+            </div>
+            <div class="category-content-box">
+              <h2 class="category-title">Fashion</h2>
+            </div>
+          </div>
+
+          <!--------------------------------Category - Furnitures------------------------------------------------->
+          <div class="category-item">
+            <div class="category-img">
+              <img src="./assets/icons/furnitures.png" alt="Icon of Furnitures" width="25px">
+            </div>
+            <div class="category-content-box">
+              <h2 class="category-title">Furnitures</h2>
+            </div>
+          </div>
+
+          <!--------------------------------Category - Jewelries------------------------------------------------->
+          <div class="category-item">
+            <div class="category-img">
+              <img src="./assets/icons/Jewelry.png" alt="Icon of Jewelries" width="25px">
+            </div>
+            <div class="category-content-box">
+              <h2 class="category-title">Jewelries</h2>
+            </div>
+          </div>
+
+          <!--------------------------------Category - Mobiles------------------------------------------------->
+          <div class="category-item">
+            <div class="category-img">
+              <img src="./assets/icons/mobile.png" alt="Icon of Mobiles" width="25px">
+            </div>
+            <div class="category-content-box">
+              <h2 class="category-title">Mobiles</h2>
+            </div>
+          </div>
+
+          <!--------------------------------Category - Perfumes------------------------------------------------->
+          <div class="category-item">
+            <div class="category-img">
+              <img src="./assets/icons/perfume.png" alt="Icon of Perfumes" width="25px">
+            </div>
+            <div class="category-content-box">
+              <h2 class="category-title">Perfumes</h2>
+            </div>
+          </div>
+
+          <!--------------------------------Category - Toys------------------------------------------------->
+          <div class="category-item">
+            <div class="category-img">
+              <img src="./assets/icons/toys.png" alt="Icon of Toys" width="25px">
+            </div>
+            <div class="category-content-box">
+              <h2 class="category-title">Toys</h2>
+            </div>
+          </div>
+
+          <!--------------------------------Category - Watches------------------------------------------------->
+          <div class="category-item">
+            <div class="category-img">
+              <img src="./assets/icons/watch.png" alt="Icon of Watches" width="25px">
+            </div>
+            <div class="category-content-box">
+              <h2 class="category-title">Watches</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------Adv. Banner ------------------------------------------------->
+    <div class="banner">
+      <div class="container">
+        <div class="slider-container has-scrollbar">
+          <!--------------------------------Adv. Banner 1------------------------------------------------->
+          <div class="slider-item">
+            <img src="./assets/banner-2.jpg" alt="Men's New Collection" class="banner-img">
+            <div class="banner-content">
+              <p class="banner-subtitle">Men's New Collection</p>
+              <h2 class="banner-title">Men's latest Collection</h2>
+              <p class="banner-text">Starting at <b><i class="fa-solid fa-indian-rupee-sign"></i>499/-</b> only
+              </p>
+              <a href="#" class="banner-btn">Shop Now</a>
+            </div>
+          </div>
+
+          <!--------------------------------Adv. Banner 2------------------------------------------------->
+          <div class="slider-item">
+            <img src="./assets/banner-3.jpg" alt="Women's Wekeend sale" class="banner-img">
+            <div class="banner-content">
+              <p class="banner-subtitle">Women's Wekeend sale</p>
+              <h2 class="banner-title">Women's Wekeend sale </h2>
+              <p class="banner-text">Starting at <b><i class="fa-solid fa-indian-rupee-sign"></i>299/-</b> only
+              </p>
+              <a href="#" class="banner-btn">Shop Now</a>
+            </div>
+          </div>
+
+          <!--------------------------------Adv. Banner 3------------------------------------------------->
+          <div class="slider-item">
+            <img src="./assets/banner-4.jpg" alt="Mordern Furniture" class="banner-img">
+            <div class="banner-content">
+              <p class="banner-subtitle">New Furniture Collection</p>
+              <h2 class="banner-title">Modern Furniture</h2>
+              <p class="banner-text">Best selling product UPTO <b>75%</b>OFF</p>
+              <a href="#" class="banner-btn">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------- Products --------------------------------------------------->
+    <div class="product-container">
+      <div class="container">
+        <!------------------------------ Side Bar -------------------------------------------------->
+        <div class="sidebar has-scrollbar" data-mobile-menu>
+          <div class="logo">
+            <img src="./assets/Logo.png" alt="Website's Logo" width="100px">
+          </div>
+          <div class="sidebar-category">
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Category</h2>
+              <button class="sidebar-close-btn" data-mobile-close-btn>
+                <i class="fa-solid fa-circle-xmark"></i>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+              <!-------------------------------Baby Products----------------------------------->
+              <li class="sidebar-menu-category">
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <div class="menu-title-flex">
+                    <img src="./assets/icons/babyproducts.png" alt="Baby Products" class="menu-title-img" width="25px"
+                      height="25px">
+                    <p class="menu-title">Baby Products</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-square-plus add-icon"></i>
+                    <i class="fa-regular fa-square-minus remove-icon"></i>
+                  </div>
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Bath Tub</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Bath Wash</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Cloth (Boy)</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Cloth (Girl)</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Wipes</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Bibs</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Blankets</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Bottles and nipples</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Breast Pump</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Changing Mat</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Diaper Rash Cream</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Diapering</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Diapers</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Feeding</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Nail clippers</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Stroller</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Thermometer</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-------------------------------Beauty Products----------------------------------->
+              <li class="sidebar-menu-category">
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <div class="menu-title-flex">
+                    <img src="./assets/icons/beauty.png" alt="Baby Products" class="menu-title-img" width="25px"
+                      height="25px">
+                    <p class="menu-title">Beauty Products</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-square-plus add-icon"></i>
+                    <i class="fa-regular fa-square-minus remove-icon"></i>
+                  </div>
+                </button>
+
+                <ul class="sidebar-submenu-category-list">
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Bath & Shower</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Body & Face Skin Care</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hair Care and Accessory</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Intimate Care</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Makeup Accessory</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Oral Care</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Pantyliner</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Sanitary Pad</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Shaving & Beard Care</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Sunscreen</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Tampons</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Nail clippers</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-------------------------------Books----------------------------------->
+              <li class="sidebar-menu-category">
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <div class="menu-title-flex">
+                    <img src="./assets/icons/Books.png" alt="Books" class="menu-title-img" width="25px" height="25px">
+                    <p class="menu-title">Books</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-square-plus add-icon"></i>
+                    <i class="fa-regular fa-square-minus remove-icon"></i>
+                  </div>
+                </button>
+
+                <ul class="sidebar-submenu-category-list">
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Action & Adventure</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Arts, Film & Photography</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Biographies, Diaries</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Business & Economics</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Children's Books</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Computers & Internet</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crafts, Hobbies & Home</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crime, Thriller & Mystery</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Engineering</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Exam Preparation</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Health, Fitness & Nutrition</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Historical Fiction</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">History</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Law</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Medicine and Health Sciences Textbooks</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Maps & Atlases</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Religion & Spirituality</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">School Books</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Science and Mathematics Textbooks</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Politics</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Teen & Young Adult</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Textbooks & Study Guides</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Travel & Tourism</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-------------------------------Electronics----------------------------------->
+              <li class="sidebar-menu-category">
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <div class="menu-title-flex">
+                    <img src="./assets/icons/electronics.png" alt="Electronics" class="menu-title-img" width="25px"
+                      height="25px">
+                    <p class="menu-title">Electronics</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-square-plus add-icon"></i>
+                    <i class="fa-regular fa-square-minus remove-icon"></i>
+                  </div>
+                </button>
+
+                <ul class="sidebar-submenu-category-list">
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Accessories</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Batteries & Battery Chargers</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Cameras & Photography</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Car & Vehicle Electronics</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Computers & Accessories</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">GPS & Accessories</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Headphones & Earbuds</p>
+
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Home Theater, TV & Video</p>
+
+                    </a>
+                  </li>
+
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Mobiles & Accessories</p>
+
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Portable Media Players</p>
+
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Radio Communication</p>
+
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Tablets</p>
+
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Telephones & Accessories</p>
+
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Power Accessories</p>
+
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-------------------------------Glasses & Lens----------------------------------->
+              <li class="sidebar-menu-category">
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <div class="menu-title-flex">
+                    <img src="./assets/icons/eyeglasses.png" alt="Glasses & Lens" class="menu-title-img" width="25px"
+                      height="25px">
+                    <p class="menu-title">Glasses & Lens</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-square-plus add-icon"></i>
+                    <i class="fa-regular fa-square-minus remove-icon"></i>
+                  </div>
+                </button>
+
+                <ul class="sidebar-submenu-category-list">
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Brendel eyeglasses</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Computer glasses</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Contact lenses</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Eyeglasses</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Photochromic</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Progressive lenses</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Reading glasses</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Shamir lenses</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Single vision</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Sunglasses</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-------------------------------Fashion----------------------------------->
+              <li class="sidebar-menu-category">
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <div class="menu-title-flex">
+                    <img src="./assets/icons/fashion.png" alt="Fashion" class="menu-title-img" width="25px"
+                      height="25px">
+                    <p class="menu-title">Fashion</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-square-plus add-icon"></i>
+                    <i class="fa-regular fa-square-minus remove-icon"></i>
+                  </div>
+                </button>
+
+                <ul class="sidebar-submenu-category-list">
+                  <!-------------------------------Fashion - Men's Section----------------------------------->
+
+                  <li class="sidebar-submenu-category">
+                    <button class="sidebar-accordion-menu" data-accordion-btn>
+                      <div class="menu-title-flex">
+                        <p class="menu-title">Men's Wear</p>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-square-plus add-icon"></i>
+                        <i class="fa-regular fa-square-minus remove-icon"></i>
+                      </div>
+                    </button>
+                    <ul class="sidebar-submenu-category-list">
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">T-Shirts</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Casual Shirts</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Formal Shirts</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Kurtas</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Ethnic Sets</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Blazers</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Suit</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Cargos</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Casual</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Ethnic Pyjama</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Formal</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Jeans</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Panjabi</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Pyjamas & Lounge pants</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Shorts</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Track pants</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Trousers</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-------------------------------Fashion - Women's Section----------------------------------->
+                  <li class="sidebar-submenu-category">
+                    <button class="sidebar-accordion-menu" data-accordion-btn>
+                      <div class="menu-title-flex">
+                        <p class="menu-title">Women's</p>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-square-plus add-icon"></i>
+                        <i class="fa-regular fa-square-minus remove-icon"></i>
+                      </div>
+                    </button>
+                    <ul class="sidebar-submenu-category-list">
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Blouse</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Dress Materials</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Dupatta</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Ethnic Dresses</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Gowns</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Kurta Sets & Salwar Suits</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Leggings & Patialas</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Lehenga Cholis</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Sarees</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">T-shirts</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Casual Pant</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Formal Pant</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Jeans</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Shorts</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Track Pants</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Leggings & Patialas</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Trouser</p>
+                        </a>
+                      </li>
+
+                      <li class="sidebar-submenu-category">
+                        <a href="#" class="sidebar-submenu-title">
+                          <p class="product-name">Winter Wear</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-------------------------------Furnitures----------------------------------->
+              <li class="sidebar-menu-category">
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <div class="menu-title-flex">
+                    <img src="./assets/icons/furnitures.png" alt="Furnitures" class="menu-title-img" width="25px"
+                      height="25px">
+                    <p class="menu-title">Furnitures</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-square-plus add-icon"></i>
+                    <i class="fa-regular fa-square-minus remove-icon"></i>
+                  </div>
+                </button>
+
+                <ul class="sidebar-submenu-category-list">
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Bar furniture</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Bed</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Cabinet</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Cantilever Chair</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Centre Table</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Chair</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Desk</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Dining</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Dressing Table</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Lawson couch</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Recliners</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Sofa</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Table</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">TV Stand</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Wardrobe</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-------------------------------Jewelry----------------------------------->
+              <li class="sidebar-menu-category">
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <div class="menu-title-flex">
+                    <img src="./assets/icons/Jewelry.png" alt="Jewelry" class="menu-title-img" width="25px"
+                      height="25px">
+                    <p class="menu-title">Jewelries</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-square-plus add-icon"></i>
+                    <i class="fa-regular fa-square-minus remove-icon"></i>
+                  </div>
+                </button>
+
+                <ul class="sidebar-submenu-category-list">
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Bangle</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Bracelets</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Bridal jewellery</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Chains</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Crescent pearl earrings</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Earrings</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Gold necklaces</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Mejuri</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Necklaces</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Pendant</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Rings</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-------------------------------Mobiles----------------------------------->
+              <li class="sidebar-menu-category">
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <div class="menu-title-flex">
+                    <img src="./assets/icons/mobile.png" alt="Mobiles" class="menu-title-img" width="25px"
+                      height="25px">
+                    <p class="menu-title">Mobiles</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-square-plus add-icon"></i>
+                    <i class="fa-regular fa-square-minus remove-icon"></i>
+                  </div>
+                </button>
+
+                <ul class="sidebar-submenu-category-list">
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Accessories</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Apple</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">iQOO</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Lava</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Mi</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Motorola</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Nokia</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">OnePlus</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">OPPO</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">POCO</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Realme</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Redmi</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Samsung</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Vivo</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-------------------------------Perfumes----------------------------------->
+              <li class="sidebar-menu-category">
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <div class="menu-title-flex">
+                    <img src="./assets/icons/perfume.png" alt="Perfumes" class="menu-title-img" width="25px"
+                      height="25px">
+                    <p class="menu-title">Perfumes</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-square-plus add-icon"></i>
+                    <i class="fa-regular fa-square-minus remove-icon"></i>
+                  </div>
+                </button>
+
+                <ul class="sidebar-submenu-category-list">
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Deodorant</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Deodorants & Antiperspirants</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Eau de Cologne</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Eau de Parfum</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Eau de Toilette</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Fragrance Sets</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Perfume</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Women's Body Sprays & Mists</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-------------------------------Toys----------------------------------->
+              <li class="sidebar-menu-category">
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <div class="menu-title-flex">
+                    <img src="./assets/icons/toys.png" alt="Toys" class="menu-title-img" width="25px" height="25px">
+                    <p class="menu-title">Toys</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-square-plus add-icon"></i>
+                    <i class="fa-regular fa-square-minus remove-icon"></i>
+                  </div>
+                </button>
+
+                <ul class="sidebar-submenu-category-list">
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Action Toys</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Art and Craft</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Baby Toys</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Dolls & Doll Houses</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hobby Kits</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Indoor Games</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">LCD Writing Pads</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Learning and Educational</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Musical Toys</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Outdoor Toys</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Puzzles and Cubes</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Soft Toys</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Sports Toys</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Toy Vehicles</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Tricycles and Rideons</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-------------------------------Watch----------------------------------->
+              <li class="sidebar-menu-category">
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+                  <div class="menu-title-flex">
+                    <img src="./assets/icons/watch.png" alt="Watch" class="menu-title-img" width="25px" height="25px">
+                    <p class="menu-title">Watches</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-square-plus add-icon"></i>
+                    <i class="fa-regular fa-square-minus remove-icon"></i>
+                  </div>
+                </button>
+
+                <ul class="sidebar-submenu-category-list">
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Aviator watch</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Chronographs</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Digital watches</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Dive watch</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">BField watches</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Hybrid watches</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Kinetic watch</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Military watches</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Racing watch</p>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Smartwatch</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--------------------------------- Products - Showcase Section ----------------------------------->
+        <div class="product-showcase-section">
+          <!--------------------------------- Products - Showcase for New Arrival----------------------------------->
+          <div class="product-showcase-section">
+            <div class="product-showcase">
+              <h2 class="title">New Arrival</h2>
+              <div class="showcase-wrapper has-scrollbar">
+                <div class="showcase-container" id="productContainer">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--------------------------------- Products - Showcase for Suggested for You ----------------------------------->
+          <div class="product-showcase">
+            <h2 class="title">Suggested for You</h2>
+            <div class="showcase-wrapper has-scrollbar">
+              <div class="showcase-container">
+                <!--------------------------------- Products - Showcase - 1 --------------------------------------------------->
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/products/jewellery/jewellery-1.jpg" alt="Beautiful & Attractive Big Kundan Jhumka earrings for Girls and Women.
+                    (Green Color)" class="showcase-img">
+                  </a>
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">Beautiful & Attractive Big Kundan Jhumka earrings for Girls and Women.
+                        (Green Color)</h4>
+                    </a>
+                    <a href="#" class="showcase-category">Jewelries</a>
+                    <div class="showcase-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price-box">
+                      <del>₹499/-</del>
+                      <p class="price">₹350/-</p>
+                    </div>
+                    <div class="cart">
+                      <button class="add-cart-btn"><b>Add to Cart</b></button>
+                    </div>
+                  </div>
+                </div>
+                <!--------------------------------- Products - Showcase - 2 --------------------------------------------------->
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/products/Electronics/Mouse/mouse-1.jpg"
+                      alt="POR 1610 Wireless Optical Mouse  (2.4GHz Wireless, Black)" class="showcase-img">
+                  </a>
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">POR 1610 Wireless Optical Mouse (2.4GHz Wireless, Black)</h4>
+                    </a>
+                    <a href="#" class="showcase-category">Electronics</a>
+                    <div class="showcase-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price-box">
+                      <del>₹599/-</del>
+                      <p class="price">₹399/-</p>
+                    </div>
+                    <div class="cart">
+                      <button class="add-cart-btn"><b>Add to Cart</b></button>
+                    </div>
+                  </div>
+                </div>
+                <!--------------------------------- Products - Showcase - 3 --------------------------------------------------->
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/products/Electronics/Keyboard/keyboard-2.jpg"
+                      alt="Logitech Wireless Keyboard (Black & Yellow)" class="showcase-img">
+                  </a>
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">Logitech Wireless Keyboard (Black & Yellow)</h4>
+                    </a>
+                    <a href="#" class="showcase-category">Electronics</a>
+                    <div class="showcase-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price-box">
+                      <del>₹1995/-</del>
+                      <p class="price">₹1295/-</p>
+                    </div>
+                    <div class="cart">
+                      <button class="add-cart-btn"><b>Add to Cart</b></button>
+                    </div>
+                  </div>
+                </div>
+                <!--------------------------------- Products - Showcase - 4 --------------------------------------------------->
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/products/Electronics/Headphone/headphone-2.jpg"
+                      alt="WebMedia Earbuds with wireless charging case, ANC & Spatial audio, Made in Japan Bluetooth Headset  (White, True Wireless)"
+                      class="showcase-img">
+                  </a>
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">WebMedia Earbuds with wireless charging case, ANC & Spatial audio, Made
+                        in Japan Bluetooth Headset (White, True Wireless)
+                      </h4>
+                    </a>
+                    <a href="#" class="showcase-category">Electronics</a>
+                    <div class="showcase-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price-box">
+                      <del>₹1499/-</del>
+                      <p class="price">₹999/-</p>
+                    </div>
+                    <div class="cart">
+                      <button class="add-cart-btn"><b>Add to Cart</b></button>
+                    </div>
+                  </div>
+                </div>
+                <!--------------------------------- Products - Showcase - 5 --------------------------------------------------->
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/products/bag/bag-3.jpg" alt="Men Tan Messenger Bag - Extra Spacious"
+                      class="showcase-img">
+                  </a>
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">Men Tan Messenger Bag - Extra Spacious</h4>
+                    </a>
+                    <a href="#" class="showcase-category">Bag</a>
+                    <div class="showcase-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price-box">
+                      <del>₹2999/-</del>
+                      <p class="price">₹863/-</p>
+                    </div>
+                    <div class="cart">
+                      <button class="add-cart-btn"><b>Add to Cart</b></button>
+                    </div>
+                  </div>
+                </div>
+                <!--------------------------------- Products - Showcase - 6 --------------------------------------------------->
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/products/Perfume/perfume1.jpg"
+                      alt="Bella vita organic Mens Perfume Gift Set 4x20 ml Perfumes Luxury Scent with Long Lasting Fragrance Perfume - 80 ml (For Men)"
+                      class="showcase-img">
+                  </a>
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">Bella vita organic Mens Perfume Gift Set 4x20 ml Perfumes Luxury Scent
+                        with Long Lasting Fragrance Perfume - 80 ml (For Men)</h4>
+                    </a>
+                    <a href="#" class="showcase-category">Perfumes</a>
+                    <div class="showcase-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price-box">
+                      <del>₹849/-</del>
+                      <p class="price">₹549/-</p>
+                    </div>
+                    <div class="cart">
+                      <button class="add-cart-btn"><b>Add to Cart</b></button>
+                    </div>
+                  </div>
+                </div>
+                <!--------------------------------- Products - Showcase - 7 --------------------------------------------------->
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/products/Perfume/Deodorant-1.jpg"
+                      alt="OLD SPICE LionPride Deodorant Spray - For Men  (115 ml)" class="showcase-img">
+                  </a>
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">OLD SPICE LionPride Deodorant Spray - For Men (115 ml)</h4>
+                    </a>
+                    <a href="#" class="showcase-category">Perfumes</a>
+                    <div class="showcase-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price-box">
+                      <del>₹280/-</del>
+                      <p class="price">₹246/-</p>
+                    </div>
+                    <div class="cart">
+                      <button class="add-cart-btn"><b>Add to Cart</b></button>
+                    </div>
+                  </div>
+                </div>
+                <!--------------------------------- Products - Showcase - 8 --------------------------------------------------->
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/products/Toys/Toy-1.jpg"
+                      alt="Super Hero Action Figure Toy Set of 10  (Multicolor)" class="showcase-img">
+                  </a>
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">Super Hero Action Figure Toy Set of 10 (Multicolor)</h4>
+                    </a>
+                    <a href="#" class="showcase-category">Toys</a>
+                    <div class="showcase-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price-box">
+                      <del>₹1199/-</del>
+                      <p class="price">₹589/-</p>
+                    </div>
+                    <div class="cart">
+                      <button class="add-cart-btn"><b>Add to Cart</b></button>
+                    </div>
+                  </div>
+                </div>
+                <!--------------------------------- Products - Showcase - 9 --------------------------------------------------->
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/products/Fahion/men/shoes/shoe-3.jpg" alt="Jeans" class="showcase-img">
+                  </a>
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">ROBERT-2 Derby For Men (Black)</h4>
+                    </a>
+                    <a href="#" class="showcase-category">Fashion</a>
+                    <div class="showcase-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price-box">
+                      <del>₹1499/-</del>
+                      <p class="price">₹759/-</p>
+                    </div>
+                    <div class="cart">
+                      <button class="add-cart-btn"><b>Add to Cart</b></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--------------------------------- Products - Showcase for Best Seller ----------------------------------->
+          <div class="product-showcase">
+            <h2 class="title">Best Seller</h2>
+            <div class="showcase-wrapper has-scrollbar">
+              <div class="showcase-container">
+                <!--------------------------------- Products - Showcase - 1 --------------------------------------------------->
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/products/Baby Product/Shoes/shoe-1.jpg" alt="Slip on Sneakers For Boys & Girls"
+                      class="showcase-img">
+                  </a>
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">Slip on Sneakers For Boys & Girls</h4>
+                    </a>
+                    <a href="#" class="showcase-category">Fashion</a>
+                    <div class="showcase-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price-box">
+                      <del>₹499/-</del>
+                      <p class="price">₹350/-</p>
+                    </div>
+                    <div class="cart">
+                      <button class="add-cart-btn"><b>Add to Cart</b></button>
+                    </div>
+                  </div>
+                </div>
+                <!--------------------------------- Products - Showcase - 2 --------------------------------------------------->
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/products/Fahion/men/T-shirts/2.jpeg"
+                      alt="Men Full Sleeve Solid Hooded Sweatshirt" class="showcase-img">
+                  </a>
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">Men Full Sleeve Solid Hooded Sweatshirt</h4>
+                    </a>
+                    <a href="#" class="showcase-category">Hoodies</a>
+                    <div class="showcase-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price-box">
+                      <del>₹599/-</del>
+                      <p class="price">₹399/-</p>
+                    </div>
+                    <div class="cart">
+                      <button class="add-cart-btn"><b>Add to Cart</b></button>
+                    </div>
+                  </div>
+                </div>
+                <!--------------------------------- Products - Showcase - 3 --------------------------------------------------->
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/products/Watch/watch-8.jpg" alt="Mesh Strap All Black Avatar Day and Date Functioning Quartz Analog
+                    Watch" class="showcase-img">
+                  </a>
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">Mesh Strap All Black Avatar Day and Date Functioning Quartz Analog
+                        Watch</h4>
+                    </a>
+                    <a href="#" class="showcase-category">Watch</a>
+                    <div class="showcase-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price-box">
+                      <del>₹1999/-</del>
+                      <p class="price">₹1499/-</p>
+                    </div>
+                    <div class="cart">
+                      <button class="add-cart-btn"><b>Add to Cart</b></button>
+                    </div>
+                  </div>
+                </div>
+                <!--------------------------------- Products - Showcase - 4 --------------------------------------------------->
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/products/Watch/watch-9.jpg"
+                      alt="Analog Watch - For Women Fresh Fashion Best In Market Black Girls Watch"
+                      class="showcase-img">
+                  </a>
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">Analog Watch - For Women Fresh Fashion Best In Market Black Girls Watch
+                      </h4>
+                    </a>
+                    <a href="#" class="showcase-category">Watch</a>
+                    <div class="showcase-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price-box">
+                      <del>₹1499/-</del>
+                      <p class="price">₹999/-</p>
+                    </div>
+                    <div class="cart">
+                      <button class="add-cart-btn"><b>Add to Cart</b></button>
+                    </div>
+                  </div>
+                </div>
+                <!--------------------------------- Products - Showcase - 5 --------------------------------------------------->
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/products/Fahion/women/TopWear/women-3.jpg"
+                      alt="Women Round Neck Cotton Red T-shirt" class="showcase-img">
+                  </a>
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">Women Round Neck Cotton Red T-shirt</h4>
+                    </a>
+                    <a href="#" class="showcase-category">T-shirt</a>
+                    <div class="showcase-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price-box">
+                      <del>₹499/-</del>
+                      <p class="price">₹299/-</p>
+                    </div>
+                    <div class="cart">
+                      <button class="add-cart-btn"><b>Add to Cart</b></button>
+                    </div>
+                  </div>
+                </div>
+                <!--------------------------------- Products - Showcase - 6 --------------------------------------------------->
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/products/Fahion/men/T-shirts/3.jpeg"
+                      alt="Men Solid Round Neck Cotton Blend White T-Shirt" class="showcase-img">
+                  </a>
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">Men Solid Round Neck Cotton Blend White T-Shirt</h4>
+                    </a>
+                    <a href="#" class="showcase-category">T-shirt</a>
+                    <div class="showcase-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price-box">
+                      <del>₹499/-</del>
+                      <p class="price">₹299/-</p>
+                    </div>
+                    <div class="cart">
+                      <button class="add-cart-btn"><b>Add to Cart</b></button>
+                    </div>
+                  </div>
+                </div>
+                <!--------------------------------- Products - Showcase - 7 --------------------------------------------------->
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/products/Fahion/men/Shirts/1.jpg" alt="Men's Formal Shirt Combo Pack (Pack of 4)"
+                      class="showcase-img">
+                  </a>
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">Men's Formal Shirt Combo Pack (Pack of 4)</h4>
+                    </a>
+                    <a href="#" class="showcase-category">Shirt</a>
+                    <div class="showcase-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price-box">
+                      <del>₹1999/-</del>
+                      <p class="price">₹1500/-</p>
+                    </div>
+                    <div class="cart">
+                      <button class="add-cart-btn"><b>Add to Cart</b></button>
+                    </div>
+                  </div>
+                </div>
+                <!--------------------------------- Products - Showcase - 8 --------------------------------------------------->
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/products/Glasses/7.jpg" alt="Polarized Round Sunglasses" class="showcase-img">
+                  </a>
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">Polarized Round Sunglasses</h4>
+                    </a>
+                    <a href="#" class="showcase-category">Sunglass</a>
+                    <div class="showcase-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price-box">
+                      <del>₹799/-</del>
+                      <p class="price">₹499/-</p>
+                    </div>
+                    <div class="cart">
+                      <button class="add-cart-btn"><b>Add to Cart</b></button>
+                    </div>
+                  </div>
+                </div>
+                <!--------------------------------- Products - Showcase - 9 --------------------------------------------------->
+                <div class="showcase">
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/products/Fahion/men/Pants/4.jpg" alt="Jeans" class="showcase-img">
+                  </a>
+                  <div class="showcase-content">
+                    <a href="#">
+                      <h4 class="showcase-title">Men Regular Mid Rise Jeans (Pack of 5)</h4>
+                    </a>
+                    <a href="#" class="showcase-category">Jeans</a>
+                    <div class="showcase-rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="price-box">
+                      <del>₹4000/-</del>
+                      <p class="price">₹2399/-</p>
+                    </div>
+                    <div class="cart">
+                      <button class="add-cart-btn"><b>Add to Cart</b></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--------------------------------- Products - Featured Section ----------------------------------->
+        <div class="product-featured">
+          <h2 class="title">Deal of The Day</h2>
+          <div class="product-featured-wrapper has-scrollbar">
+            <div class="product-featured-container">
+              <div class="product-featured-showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/products/bag/bag-2.jpg" alt="Medium 30 L Laptop Backpack SPREEUSB CASUAL (Grey)"
+                    class="showcase-img">
+                </div>
+                <div class="showcase-content">
+                  <div class="showcase-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <a href="#">
+                    <h3 class="showcase-title">Medium 30 L Laptop Backpack SPREEUSB CASUAL (Grey)</h3>
+                  </a>
+                  <div class="product-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, alias sed? Reiciendis nulla repellat
+                    culpa,
+                  </div>
+                  <div class="price-box">
+                    <p class="price"><b>₹699/-</b></p>
+                    <del>
+                      <p>₹2,499/-</p>
+                    </del>
+                  </div>
+                  <div class="cart">
+                    <button class="add-cart-btn"><b>Add to Cart</b></button>
+                  </div>
+                  <div class="showcase-status">
+                    <div class="wrapper">
+                      <p><b>Available</b></p>
+                    </div>
+                  </div>
+                  <div class="countdown-box">
+                    <p class="countdown-message">Hurry Up!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-featured-container">
+              <div class="product-featured-showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/products/bag/bag-2.jpg" alt="Medium 30 L Laptop Backpack SPREEUSB CASUAL (Grey)"
+                    class="showcase-img">
+                </div>
+                <div class="showcase-content">
+                  <div class="showcase-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <a href="#">
+                    <h3 class="showcase-title">Medium 30 L Laptop Backpack SPREEUSB CASUAL (Grey)</h3>
+                  </a>
+                  <div class="product-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, alias sed? Reiciendis nulla repellat
+                    culpa,
+                  </div>
+                  <div class="price-box">
+                    <p class="price"><b>₹699/-</b></p>
+                    <del>
+                      <p>₹2,499/-</p>
+                    </del>
+                  </div>
+                  <div class="cart">
+                    <button class="add-cart-btn"><b>Add to Cart</b></button>
+                  </div>
+                  <div class="showcase-status">
+                    <div class="wrapper">
+                      <p><b>Available</b></p>
+                    </div>
+                  </div>
+                  <div class="countdown-box">
+                    <p class="countdown-message">Hurry Up!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-featured-container">
+              <div class="product-featured-showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/products/Electronics/Monitor/monitor-1.jpg"
+                    alt="LG 24 inch Full HD LED Backlit IPS Panel White Colour Monitor (24MK600M)  (AMD Free Sync, Response Time: 5 ms, 75 Hz Refresh Rate)"
+                    class="showcase-img">
+                </div>
+                <div class="showcase-content">
+                  <div class="showcase-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <a href="#">
+                    <h3 class="showcase-title">LG 24 inch Full HD LED Backlit IPS Panel White Colour Monitor (24MK600M)
+                      (AMD Free Sync, Response Time: 5 ms, 75 Hz Refresh Rate)</h3>
+                  </a>
+                  <div class="product-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, alias sed? Reiciendis nulla repellat
+                    culpa,
+                  </div>
+                  <div class="price-box">
+                    <p class="price"><b>₹8,199/-</b></p>
+                    <del>
+                      <p>₹16,500/-</p>
+                    </del>
+
+                  </div>
+                  <div class="cart">
+                    <button class="add-cart-btn"><b>Add to Cart</b></button>
+                  </div>
+                  <div class="showcase-status">
+
+                    <div class="wrapper">
+                      <p><b>Available</b></p>
+                    </div>
+
+                  </div>
+                  <div class="countdown-box">
+                    <p class="countdown-message">Hurry Up!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-featured-container">
+              <div class="product-featured-showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/products/Electronics/Printer/printer-1.jpg"
+                    alt="brother DCP-B7535DW Multi-function WiFi Monochrome Laser Printer  (Grey, Toner Cartridge)"
+                    class="showcase-img">
+                </div>
+                <div class="showcase-content">
+                  <div class="showcase-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <a href="#">
+                    <h3 class="showcase-title">brother DCP-B7535DW Multi-function WiFi Monochrome Laser Printer (Grey,
+                      Toner Cartridge)</h3>
+                  </a>
+                  <div class="product-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, alias sed? Reiciendis nulla repellat
+                    culpa,
+                  </div>
+                  <div class="price-box">
+                    <p class="price"><b>₹20,999/-</b></p>
+                    <del>
+                      <p>₹26,490/-</p>
+                    </del>
+                  </div>
+                  <div class="cart">
+                    <button class="add-cart-btn"><b>Add to Cart</b></button>
+                  </div>
+                  <div class="showcase-status">
+                    <div class="wrapper">
+                      <p><b>Available</b></p>
+                    </div>
+                  </div>
+                  <div class="countdown-box">
+                    <p class="countdown-message">Hurry Up!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-featured-container">
+              <div class="product-featured-showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/products/Electronics/Clock/clock-1.jpg"
+                    alt="HorseHead Analog 40 cm X 29 cm Wall Clock  (Brown, With Glass, Standard)" class="showcase-img">
+                </div>
+                <div class="showcase-content">
+                  <div class="showcase-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <a href="#">
+                    <h3 class="showcase-title">HorseHead Analog 40 cm X 29 cm Wall Clock (Brown, With Glass, Standard)
+                    </h3>
+                  </a>
+                  <div class="product-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, alias sed? Reiciendis nulla repellat
+                    culpa,
+                  </div>
+                  <div class="price-box">
+                    <p class="price"><b>₹695/-</b></p>
+                    <del>
+                      <p>₹1,999/-</p>
+                    </del>
+                  </div>
+                  <div class="cart">
+                    <button class="add-cart-btn"><b>Add to Cart</b></button>
+                  </div>
+                  <div class="showcase-status">
+
+                    <div class="wrapper">
+                      <p><b>Available</b></p>
+                    </div>
+
+                  </div>
+                  <div class="countdown-box">
+                    <p class="countdown-message">Hurry Up!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-featured-container">
+              <div class="product-featured-showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/products/jewellery/jewellery-4.jpg"
+                    alt="Alloy Rhodium White Jewel Set  (Pack of 1)" class="showcase-img">
+                </div>
+                <div class="showcase-content">
+                  <div class="showcase-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <a href="#">
+                    <h3 class="showcase-title">Alloy Rhodium White Jewel Set (Pack of 1)</h3>
+                  </a>
+                  <div class="product-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, alias sed? Reiciendis nulla repellat
+                    culpa,
+                  </div>
+                  <div class="price-box">
+                    <p class="price"><b>₹499/-</b></p>
+                    <del>
+                      <p>₹1,499/-</p>
+                    </del>
+                  </div>
+                  <div class="cart">
+                    <button class="add-cart-btn"><b>Add to Cart</b></button>
+                  </div>
+                  <div class="showcase-status">
+
+                    <div class="wrapper">
+                      <p><b>Available</b></p>
+                    </div>
+
+                  </div>
+                  <div class="countdown-box">
+                    <p class="countdown-message">Hurry Up!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--------------------------------- Products - Grid ----------------------------------->
+        <div class="product-grid">
+          <h2 class="title">Best of Electronics </h2>
+          <div class="grid">
+            <div class="showcase-section">
+              <div class="showcase-banner">
+                <img src="./assets/products/Electronics/PowerBank/power-bank1.jpg"
+                  alt="Callmate 20000 mAh 15 W Power Bank  (Red, Lithium Polymer, Fast Charging for Mobile)"
+                  class="product-img defult">
+                <img src="./assets/products/Electronics/PowerBank/power-bank1_1.jpg"
+                  alt="Callmate 20000 mAh 15 W Power Bank  (Red, Lithium Polymer, Fast Charging for Mobile)"
+                  class="product-img hover">
+                <p class="showcase-badge">27% Off</p>
+                <div class="showcase-action-btn">
+                  <button class="btn-action"><i class="fa-solid fa-cart-shopping"></i></button>
+                  <button class="btn-action"><i class="fa-solid fa-eye"></i></button>
+                  <button class="btn-action"><i class="fa-solid fa-repeat"></i></button>
+                  <button class="btn-action"><i class="fa-solid fa-bag-shopping"></i></button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="#" class="showcase-title">Callmate 20000 mAh 15 W Power Bank (Red, Lithium Polymer, Fast
+                  Charging for Mobile)</a>
+                <a href="#" class="showcase-category">Electronics</a>
+                <div class="showcase-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="price-box">
+                  <p class="price">₹1,169/-</p>
+                  <del>
+                    <p>₹2,999/-</p>
+                  </del>
+                </div>
+                <div class="cart">
+                  <button class="add-cart-btn"><b>Add to Cart</b></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="showcase-section">
+              <div class="showcase-banner">
+                <img src="./assets/products/Electronics/Oxymeter/Oxymeter-1.jpg"
+                  alt="Dr. Trust (USA) Model 210 FingerTip Oxy meter Finger Oxygen Saturation Heart Rate Monitor Pulse Oximeter  (Black)"
+                  class="product-img defult">
+                <img src="./assets/products/Electronics/Oxymeter/Oxymeter-1_1.jpg"
+                  alt="Dr. Trust (USA) Model 210 FingerTip Oxy meter Finger Oxygen Saturation Heart Rate Monitor Pulse Oximeter  (Black)"
+                  class="product-img hover">
+                <p class="showcase-badge">94% Off</p>
+                <div class="showcase-action-btn">
+                  <button class="btn-action"><i class="fa-solid fa-cart-shopping"></i></button>
+                  <button class="btn-action"><i class="fa-solid fa-eye"></i></button>
+                  <button class="btn-action"><i class="fa-solid fa-repeat"></i></button>
+                  <button class="btn-action"><i class="fa-solid fa-bag-shopping"></i></button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="#" class="showcase-title">Dr. Trust (USA) Model 210 FingerTip Oxy meter Finger Oxygen
+                  Saturation Heart Rate Monitor Pulse Oximeter (Black)</a>
+                <a href="#" class="showcase-category">Electronics</a>
+                <div class="showcase-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="price-box">
+                  <p class="price">₹299/-</p>
+                  <del>
+                    <p>₹5,500/-</p>
+                  </del>
+                </div>
+                <div class="cart">
+                  <button class="add-cart-btn"><b>Add to Cart</b></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="showcase-section">
+              <div class="showcase-banner">
+                <img src="./assets/products/Electronics/WaterPurifier/WaterPurifier-1.jpg"
+                  alt="Pureit Max Water Saver 10 L RO + UV + MF Water Purifier with Eco Recovery Technology (Black, White)"
+                  class="product-img defult">
+                <img src="./assets/products/Electronics/WaterPurifier/WaterPurifier-1_1.jpg"
+                  alt="Pureit Max Water Saver 10 L RO + UV + MF Water Purifier with Eco Recovery Technology (Black, White)"
+                  class="product-img hover">
+                <p class="showcase-badge">37% Off</p>
+                <div class="showcase-action-btn">
+                  <button class="btn-action"><i class="fa-solid fa-cart-shopping"></i></button>
+                  <button class="btn-action"><i class="fa-solid fa-eye"></i></button>
+                  <button class="btn-action"><i class="fa-solid fa-repeat"></i></button>
+                  <button class="btn-action"><i class="fa-solid fa-bag-shopping"></i></button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="#" class="showcase-title">Pureit Max Water Saver 10 L RO + UV + MF Water Purifier with Eco
+                  Recovery Technology (Black, White)</a>
+                <a href="#" class="showcase-category">Electronics</a>
+                <div class="showcase-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="price-box">
+                  <p class="price">₹13,999/-</p>
+                  <del>
+                    <p>₹12,500/-</p>
+                  </del>
+                </div>
+                <div class="cart">
+                  <button class="add-cart-btn"><b>Add to Cart</b></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="showcase-section">
+              <div class="showcase-banner">
+                <img src="./assets/products/Electronics/AC/AC-1.jpg"
+                  alt="Godrej 5-In-1 Convertible Cooling 2023 Model 1.5 Ton 3 Star Split Inverter With Heavy Duty Cooling at Extreme Temperature AC - White"
+                  class="product-img defult">
+                <img src="./assets/products/Electronics/AC/AC-1_1.jpg"
+                  alt="Godrej 5-In-1 Convertible Cooling 2023 Model 1.5 Ton 3 Star Split Inverter With Heavy Duty Cooling at Extreme Temperature AC - White"
+                  class="product-img hover">
+                <p class="showcase-badge">31% Off</p>
+                <div class="showcase-action-btn">
+                  <button class="btn-action"><i class="fa-solid fa-cart-shopping"></i></button>
+                  <button class="btn-action"><i class="fa-solid fa-eye"></i></button>
+                  <button class="btn-action"><i class="fa-solid fa-repeat"></i></button>
+                  <button class="btn-action"><i class="fa-solid fa-bag-shopping"></i></button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="#" class="showcase-title">Godrej 5-In-1 Convertible Cooling 2023 Model 1.5 Ton 3 Star Split
+                  Inverter With Heavy Duty Cooling at Extreme Temperature AC - White</a>
+                <a href="#" class="showcase-category">Electronics</a>
+                <div class="showcase-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="price-box">
+                  <p class="price">₹12,990/-</p>
+                  <del>
+                    <p>₹18,900/-</p>
+                  </del>
+                </div>
+                <div class="cart">
+                  <button class="add-cart-btn"><b>Add to Cart</b></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="showcase-section">
+              <div class="showcase-banner">
+                <img src="./assets/products/Electronics/Monitor/monitor-2.jpg"
+                  alt="SAMSUNG 80 cm (32 Inch) HD Ready LED Smart Tizen TV 2022 Edition with Bezel-free Design"
+                  class="product-img defult">
+                <img src="./assets/products/Electronics/Monitor/monitor-2_1.jpg"
+                  alt="SAMSUNG 80 cm (32 Inch) HD Ready LED Smart Tizen TV 2022 Edition with Bezel-free Design"
+                  class="product-img hover">
+                <p class="showcase-badge">31% Off</p>
+                <div class="showcase-action-btn">
+                  <button class="btn-action"><i class="fa-solid fa-cart-shopping"></i></button>
+                  <button class="btn-action"><i class="fa-solid fa-eye"></i></button>
+                  <button class="btn-action"><i class="fa-solid fa-repeat"></i></button>
+                  <button class="btn-action"><i class="fa-solid fa-bag-shopping"></i></button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="#" class="showcase-title">SAMSUNG 80 cm (32 Inch) HD Ready LED Smart Tizen TV 2022 Edition with
+                  Bezel-free Design</a>
+                <a href="#" class="showcase-category">Electronics</a>
+                <div class="showcase-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="price-box">
+                  <p class="price">₹799/-</p>
+                  <del>
+                    <p>₹999/-</p>
+                  </del>
+                </div>
+                <div class="cart">
+                  <button class="add-cart-btn"><b>Add to Cart</b></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="showcase-section">
+              <div class="showcase-banner">
+                <img src="./assets/products/Electronics/AirCooler/AirCooler-1.jpg"
+                  alt="Crompton 88 L Desert Air Cooler with Honeycomb Cooling Pad " class="product-img defult">
+                <img src="./assets/products/Electronics/AirCooler/AirCooler-1_1.jpg"
+                  alt="Crompton 88 L Desert Air Cooler with Honeycomb Cooling Pad " class="product-img hover">
+                <p class="showcase-badge">46% Off</p>
+                <div class="showcase-action-btn">
+                  <button class="btn-action"><i class="fa-solid fa-cart-shopping"></i></button>
+                  <button class="btn-action"><i class="fa-solid fa-eye"></i></button>
+                  <button class="btn-action"><i class="fa-solid fa-repeat"></i></button>
+                  <button class="btn-action"><i class="fa-solid fa-bag-shopping"></i></button>
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="#" class="showcase-title">Crompton 88 L Desert Air Cooler with Honeycomb Cooling Pad </a>
+                <a href="#" class="showcase-category">Electronics</a>
+                <div class="showcase-rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="price-box">
+                  <p class="price">₹10,699/-</p>
+                  <del>
+                    <p>₹19,990/-</p>
+                  </del>
+                </div>
+                <div class="cart">
+                  <button class="add-cart-btn"><b>Add to Cart</b></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------- Shop by category ----------------------------------->
+    <div class="category-shop">
+      <div class="container">
+        <h3 class="title">SHOP BY CATEGORY</h3>
+        <div class="category-shop-container">
+          <div class="category-shop-container-content">
+            <a href="#">
+              <img src="./assets/SHOP_BY_CATEGORY/Ethnic_wear.jpg" alt="Ethnic Wear">
+              <div class="text">
+                <p class="content-title">Ethnic Wear</p>
+                <p class="price">30-50% OFF</p>
+                <a href="#" class="banner-btn">Shop Now</a>
+              </div>
+            </a>
+          </div>
+
+          <div class="category-shop-container-content">
+            <a href="#">
+              <img src="./assets/SHOP_BY_CATEGORY/Casual_wear.jpg" alt="Casual Wear">
+              <div class="text">
+                <p class="content-title">Casual Wear</p>
+                <p class="price">20-60% OFF</p>
+                <a href="#" class="banner-btn">Shop Now</a>
+              </div>
+            </a>
+          </div>
+
+          <div class="category-shop-container-content">
+            <a href="#">
+              <img src="./assets/SHOP_BY_CATEGORY/active_wear.jpg" alt="Activewear">
+              <div class="text">
+                <p class="content-title">Activewear</p>
+                <p class="price">30-70% OFF</p>
+                <a href="#" class="banner-btn">Shop Now</a>
+              </div>
+            </a>
+          </div>
+
+          <div class="category-shop-container-content">
+            <a href="#">
+              <img src="./assets/SHOP_BY_CATEGORY/western_wear.jpg" alt="Western Wear">
+              <div class="text">
+                <p class="content-title">Western Wear</p>
+                <p class="price">30-50% OFF</p>
+                <a href="#" class="banner-btn">Shop Now</a>
+              </div>
+            </a>
+          </div>
+
+          <div class="category-shop-container-content">
+            <a href="#">
+              <img src="./assets/SHOP_BY_CATEGORY/sports-wear.jpg" alt="Sports Wear">
+              <div class="text">
+                <p class="content-title">Sports Wear</p>
+                <p class="price">30-50% OFF</p>
+                <a href="#" class="banner-btn">Shop Now</a>
+              </div>
+            </a>
+          </div>
+
+          <div class="category-shop-container-content">
+            <a href="#">
+              <img src="./assets/SHOP_BY_CATEGORY/Loungewear.jpg" alt="Loungewear">
+              <div class="text">
+                <p class="content-title">Loungewear</p>
+                <p class="price">30-56% OFF</p>
+                <a href="#" class="banner-btn">Shop Now</a>
+              </div>
+            </a>
+          </div>
+
+          <div class="category-shop-container-content">
+            <a href="#">
+              <img src="./assets/SHOP_BY_CATEGORY/Watches.jpg" alt="Watches">
+              <div class="text">
+                <p class="content-title">Watches</p>
+                <p class="price">UPTO 40% OFF</p>
+                <a href="#" class="banner-btn">Shop Now</a>
+              </div>
+            </a>
+          </div>
+
+          <div class="category-shop-container-content">
+            <a href="#">
+              <img src="./assets/SHOP_BY_CATEGORY/Grooming.jpg" alt="Grooming">
+              <div class="text">
+                <p class="content-title">Grooming</p>
+                <p class="price">UPTO 50% OFF</p>
+                <a href="#" class="banner-btn">Shop Now</a>
+              </div>
+            </a>
+          </div>
+
+          <div class="category-shop-container-content">
+            <a href="#">
+              <img src="./assets/SHOP_BY_CATEGORY/Beauty_Makeup.jpg" alt="Beauty & Makeup">
+              <div class="text">
+                <p class="content-title">Beauty & Makeup</p>
+                <p class="price">30-50% OFF</p>
+                <a href="#" class="banner-btn">Shop Now</a>
+              </div>
+            </a>
+          </div>
+
+          <div class="category-shop-container-content">
+            <a href="#">
+              <img src="./assets/SHOP_BY_CATEGORY/KidsWear.jpg" alt="Kids Wear">
+              <div class="text">
+                <p class="content-title">Kids Wear</p>
+                <p class="price">50-70% OFF</p>
+                <a href="#" class="banner-btn">Shop Now</a>
+              </div>
+            </a>
+          </div>
+
+          <div class="category-shop-container-content">
+            <a href="#">
+              <img src="./assets/SHOP_BY_CATEGORY/Footwear-men.jpg" alt="Footwear Men">
+              <div class="text">
+                <p class="content-title">Footwear Men</p>
+                <p class="price">30-70% OFF</p>
+                <a href="#" class="banner-btn">Shop Now</a>
+              </div>
+            </a>
+          </div>
+
+          <div class="category-shop-container-content">
+            <a href="#">
+              <img src="./assets/SHOP_BY_CATEGORY/Footwear_Women.jpg" alt="Footwear Women">
+              <div class="text">
+                <p class="content-title">Footwear Women</p>
+                <p class="price">30-80% OFF</p>
+                <a href="#" class="banner-btn">Shop Now</a>
+              </div>
+            </a>
+          </div>
+
+          <div class="category-shop-container-content">
+            <a href="#">
+              <img src="./assets/SHOP_BY_CATEGORY/Bag_Belt_Wallets.jpg" alt="Bag, Belt & Wallets">
+              <div class="text">
+                <p class="content-title">Bag, Belt & Wallets</p>
+                <p class="price">UPTO 70% OFF</p>
+                <a href="#" class="banner-btn">Shop Now</a>
+              </div>
+            </a>
+          </div>
+
+          <div class="category-shop-container-content">
+            <a href="#">
+              <img src="./assets/SHOP_BY_CATEGORY/Office_Wear.jpg" alt="Office Wear">
+              <div class="text">
+                <p class="content-title">Office Wear</p>
+                <p class="price">40-70% OFF</p>
+                <a href="#" class="banner-btn">Shop Now</a>
+              </div>
+            </a>
+          </div>
+
+          <div class="category-shop-container-content">
+            <a href="#">
+              <img src="./assets/SHOP_BY_CATEGORY/ethnic-wear-men.jpg" alt="Ethnic Wear Men">
+              <div class="text">
+                <p class="content-title">Ethnic Wear Men</p>
+                <p class="price">UPTO 70% OFF</p>
+                <a href="#" class="banner-btn">Shop Now</a>
+              </div>
+            </a>
+          </div>
+
+          <div class="category-shop-container-content">
+            <a href="#">
+              <img src="./assets/SHOP_BY_CATEGORY/Headphones-Speakers.jpg" alt="Headphones & Speakers">
+              <div class="text">
+                <p class="content-title">Headphones & Speakers</p>
+                <p class="price">40-60% OFF</p>
+                <a href="#" class="banner-btn">Shop Now</a>
+              </div>
+            </a>
+          </div>
+
+          <div class="category-shop-container-content">
+            <a href="#">
+              <img src="./assets/SHOP_BY_CATEGORY/Jewellery.jpg" alt="Jewellery">
+              <div class="text">
+                <p class="content-title">Jewellery</p>
+                <p class="price">UPTO 50% OFF</p>
+                <a href="#" class="banner-btn">Shop Now</a>
+              </div>
+            </a>
+          </div>
+
+          <div class="category-shop-container-content">
+            <a href="#">
+              <img src="./assets/SHOP_BY_CATEGORY/Eyewear.jpg" alt="Eyewear">
+              <div class="text">
+                <p class="content-title">Eyewear</p>
+                <p class="price">UPTO 80% OFF</p>
+                <a href="#" class="banner-btn">Shop Now</a>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------------- offer-section -------------------------------------------------------->
+    <div class="offer-section-container">
+      <div class="container">
+        <h3 class="title">TRADITIONAL AND WEDDING COLLECTION</h3>
+        <div class="offer-section">
+          <a href="#">
+            <div class="offer-section-content">
+              <img src="./assets/model/pexels-nripen-kumar-roy-730055.jpg" alt="Wedding collection for women">
+              <p class="content-title">Wedding collection for women</p>
+              <p class="price">UPTO 28% OFF</p>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="offer-section-content">
+              <img src="./assets/model/traditional-indian-men-clothes-pagri-turban.jpg"
+                alt="Wedding collection for men">
+              <p class="content-title">Wedding collection for men</p>
+              <p class="price">UPTO 30% OFF</p>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="offer-section-content">
+              <img src="./assets/model/pexels-bhoopal-m-1446161.jpg" alt="Traditional collection for women">
+              <p class="content-title">Traditional collection for women</p>
+              <p class="price">UPTO 20% OFF</p>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="offer-section-content">
+              <img src="./assets/model/Top 120+ Wedding Dresses For Men.jpg" alt="Traditional collection for men">
+              <p class="content-title">Traditional collection for men</p>
+              <p class="price">UPTO 25% OFF</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="offer-section-container">
+      <div class="container">
+        <h3 class="title">FOOTWEAR</h3>
+        <div class="offer-section">
+          <a href="#">
+            <div class="offer-section-content">
+              <img src="./assets/model/footwear1.jpg" alt="SNEAKERS">
+              <p class="content-title">SNEAKERS</p>
+              <p class="price">MIN 40% OFF</p>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="offer-section-content">
+              <img src="./assets/model/footwear2.jpg" alt="HEELS">
+              <p class="content-title">HEELS</p>
+              <p class="price">MIN 50% OFF</p>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="offer-section-content">
+              <img src="./assets/model/footwear3.jpg" alt="Loafer Sneakers Casual Shoe for Women">
+              <p class="content-title">Loafer Sneakers Casual Shoe for Women</p>
+              <p class="price">MIN 20% OFF</p>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="offer-section-content">
+              <img src="./assets/model/footwear4.jpeg" alt="SPORTS SHOES">
+              <p class="content-title">SPORTS SHOES</p>
+              <p class="price">MIN 35% OFF</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="offer-section-container">
+      <div class="container">
+        <h3 class="title">TOPWEAR- SHIRT</h3>
+        <div class="offer-section">
+          <a href="#">
+            <div class="offer-section-content">
+              <img src="./assets/model/red-checkered-shirt-fashion-man-posing.jpg" alt="MEN CASUAL SHIRT">
+              <p class="content-title">MEN'S CASUAL SHIRT</p>
+              <p class="price">UPTO 25% OFF</p>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="offer-section-content">
+              <img src="./assets/model/male-office-wearing.jpg" alt="MALE OFFICE WEARING">
+              <p class="content-title">MEN'S OFFICE WEARING</p>
+              <p class="price">UPTO 35% OFF</p>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="offer-section-content">
+              <img src="./assets/model/WOMEN_CASUAL_SHIRT.jpg" alt="WOMEN'S CASUAL SHIRT">
+              <p class="content-title">WOMEN'S CASUAL SHIRT</p>
+              <p class="price">UPTO 20% OFF</p>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="offer-section-content">
+              <img src="./assets/model/WOMEN_OFFICE_SHIRT.jpg" alt="WOMEN'S OFFICE SHIRT">
+              <p class="content-title">WOMEN'S OFFICE SHIRT</p>
+              <p class="price">UPTO 35% OFF</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------------- Service -------------------------------------------------------->
+    <div class="service-container">
+      <div class="container">
+        <h2 class="title">Our Services</h2>
+        <div class="services">
+          <div class="service-content">
+            <img src="./assets/services/WorldwideDelivery.svg" alt="Worldwide Delivery image">
+            <h3 class="services-title">Worldwide Delivery</h3>
+          </div>
+          <div class="service-content">
+            <img src="./assets/services/24hrDelivery.svg" alt="Worldwide Delivery image">
+            <h3 class="services-title">Next Day Delivery</h3>
+          </div>
+          <div class="service-content">
+            <img src="./assets/services/24 x7OnlineSupport.svg" alt="Worldwide Delivery image">
+            <h3 class="services-title">24 x 7 Online Support</h3>
+          </div>
+          <div class="service-content">
+            <img src="./assets/services/7daysEasyReturn.svg" alt="Worldwide Delivery image">
+            <h3 class="services-title">7days Easy Return</h3>
+          </div>
+          <div class="service-content">
+            <img src="./assets/services/securepayment.svg" alt="Worldwide Delivery image">
+            <h3 class="services-title">Secure Payment </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------------------- Logo slider -------------------------------------------------------->
+    <div class="logo-slider">
+      <div class="container">
+        <div class="logos">
+          <img src="./assets/logos/adidas.svg" alt="Logo of adidas" class="logos-logo">
+          <img src="./assets/logos/Air_jordan.svg" alt="Logo of Air jordan" class="logos-logo">
+          <img src="./assets/logos/Aoc.svg" alt="Logo of Aoc" class="logos-logo">
+          <img src="./assets/logos/Blackberry.svg" alt="Logo of Blackberry" class="logos-logo">
+          <img src="./assets/logos/Bose.svg" alt="Logo of Bose" class="logos-logo">
+          <img src="./assets/logos/Brother.svg" alt="Logo of Brother" class="logos-logo">
+          <img src="./assets/logos/Clarion.svg" alt="Logo of Clarion" class="logos-logo">
+          <img src="./assets/logos/coach.svg" alt="Logo of coach" class="logos-logo">
+          <img src="./assets/logos/Corsair.svg" alt="Logo of Corsair" class="logos-logo">
+          <img src="./assets/logos/Daikin.svg" alt="Logo of Daikin" class="logos-logo">
+          <img src="./assets/logos/kingston.svg" alt="Logo of kingston" class="logos-logo">
+          <img src="./assets/logos/levis.svg" alt="Logo of levis" class="logos-logo">
+          <img src="./assets/logos/nike.svg" alt="Logo of nike" class="logos-logo">
+          <img src="./assets/logos/Oppo.svg" alt="Logo of Oppo" class="logos-logo">
+          <img src="./assets/logos/POCO.svg" alt="Logo of POCO" class="logos-logo">
+          <img src="./assets/logos/ralph.svg" alt="Logo of ralph lauren" class="logos-logo">
+          <img src="./assets/logos/Samsung.svg" alt="Logo of Samsung" class="logos-logo">
+          <img src="./assets/logos/Vivo.svg" alt="Logo of Vivo" class="logos-logo">
+        </div>
+      </div>
+    </div>
+    <!-------------------------------------- message-container -------------------------------------------------------->
+    <div class="message-container">
+      <div class="container">
+        <div class="message-top">
+          <h3 class="title">Bazaar Care</h3>
+          <p>We do not ask for your bank account or card details verbally or telephonically. <br>
+            We also do not ask for money to participate in any of our offers or run any lucky draws. Beware of
+            fraudsters.
+          </p>
+        </div>
+        <div class="message-bottom">
+          <ul>
+            <li>
+              <i class="fa-solid fa-arrows-rotate"></i>
+              <p>EASY EXCHANGE</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-hand-holding-heart"></i>
+              <p>100% HANDPICKED</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-certificate"></i>
+              <p>ASSURED QUALITY</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-------====================================== footer Section =======================================----->
+  <footer>
+    <div class="footer-container">
+      <div class="container">
+        <div class="footer-content">
+          <!---------------------------------- Services-Section ------------------------------------------>
+          <div class="footer-section">
+            <div class="footer-title">
+              <p>Our Services</p>
+            </div>
+            <ul class="footer-subtitle">
+              <li>
+                <a href="#"><i class="fa-solid fa-earth-americas"></i>Worldwide Delivery</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-truck-fast"></i>Next Day Delivery</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-headset"></i>24 x 7 Online Support </a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-arrow-rotate-left"></i>7days Easy Return</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-building-lock"></i>Secure Payment</a>
+              </li>
+            </ul>
+          </div>
+
+          <!---------------------------------- ABOUT-Section ------------------------------------------>
+          <div class="footer-section">
+            <div class="footer-title">
+              <p>ABOUT</p>
+            </div>
+            <ul class="footer-subtitle">
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">Information</a>
+              </li>
+              <li>
+                <a href="#">Press</a>
+              </li>
+              <li>
+                <a href="#">Bazaar</a>
+              </li>
+            </ul>
+          </div>
+
+          <!---------------------------------- HELP-Section ------------------------------------------>
+          <div class="footer-section">
+            <div class="footer-title">
+              <p>HELP</p>
+            </div>
+            <ul class="footer-subtitle">
+              <li>
+                <a href="#">Report</a>
+              </li>
+              <li>
+                <a href="#">Order</a>
+              </li>
+              <li>
+                <a href="#">Returns</a>
+              </li>
+              <li>
+                <a href="#">Cancellation</a>
+              </li>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                <a href="#">Shipping</a>
+              </li>
+              <li>
+                <a href="#">Payments</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+
+          <!---------------------------------- CONSUMER POLICY-Section ------------------------------------------>
+          <div class="footer-section">
+            <div class="footer-title">
+              <p>CONSUMER POLICY</p>
+            </div>
+            <ul class="footer-subtitle">
+              <li>
+                <a href="#">Terms Of Use</a>
+              </li>
+              <li>
+                <a href="#">Cancellation & Returns</a>
+              </li>
+              <li>
+                <a href="#">Privacy</a>
+              </li>
+              <li>
+                <a href="#">Security</a>
+              </li>
+              <li>
+                <a href="#">T&C</a>
+              </li>
+              <li>
+                <a href="#">Help</a>
+              </li>
+            </ul>
+          </div>
+
+          <!---------------------------------- SOCIAL-Section ------------------------------------------>
+          <div class="footer-section">
+            <div class="footer-title">
+              <p>SOCIAL</p>
+            </div>
+            <ul class="footer-subtitle">
+              <li>
+                <a href="https://www.facebook.com/rhrajeshaldar/" target="_blank"><i class="fa-brands fa-facebook"></i>
+                  Facebook</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/rhrajeshaldar/" target="_blank"><i
+                    class="fa-brands fa-square-instagram"></i> Instagram</a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-square-x-twitter"></i> X</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/rajeshaldar/"><i class="fa-brands fa-linkedin"></i> LinkedIN</a>
+              </li>
+            </ul>
+          </div>
+
+          <!---------------------------------- address-Section ------------------------------------------>
+          <div class="footer-section">
+            <div class="footer-title">
+              <p>Registered Office Address:</p>
+            </div>
+            <address>
+              <p>
+                Bazaar Pvt. Ltd. <br />1/28 xxxxxxxx Rd. <br />xxxxxxxxxxx,
+                xxxxxxxx, <br />xxxxxxxxxx, 123456.
+              </p>
+              <br />
+              <span>
+                <p>
+                  <a href="tel:+911234567890">
+                    <i class="fa-solid fa-square-phone"></i> +911234567890
+                  </a>
+                </p>
+              </span>
+              <br>
+              <span>
+                <p>
+                  <a href="mailto:example@demo.com">
+                    <i class="fa-solid fa-envelope"></i> example@demo.com
+                  </a>
+                </p>
+              </span>
+            </address>
+          </div>
+        </div>
+        <!---------------------------------------Country--------------------------------------------->
+        <div class="country">
+          <p>Country of origin India</p>
+          <img src="./assets/india-flag-icon.svg" alt="Indian Flag" width="20px">
+        </div>
+        <!---------------------------------------Payment--------------------------------------------->
+        <div class="payment-mode">
+          <img src="./assets/payment.png" alt="">
+        </div>
+        <hr>
+        <!-------------------------------Copyright-section------------------------------------------------->
+        <div class="copyright">
+          <p>Copyright <i class="fa-regular fa-copyright"></i> 2024-2025, Bazaar</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-------------------------JS file-------------------------------------->
+  <script src="myscripts.js"></script>
+</body>
+
+</html>
