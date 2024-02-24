@@ -1,0 +1,561 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: rgb(0, 0, 0);
+  color: white;
+}
+a:link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* =========================================== Style the container =============================*/
+.container {
+  padding: 10px 10%;
+}
+
+/* =========================================== Style the Perloader =============================*/
+#preloader {
+  width: 100%;
+  height: 100vh;
+  background: #ffffff url("./assets/Settings.gif") no-repeat center center;
+  position: fixed;
+  z-index: 100;
+}
+
+/* =========================================== Style the Header =============================*/
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(assets/background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* =========================================== Style the NavBar and its elements =============================*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #fee715;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* =========================================== Style the Logo =============================*/
+.logo {
+  width: 150px;
+}
+
+/* =========================================== Style the Header text =============================*/
+.header-text {
+  margin-top: 20%;
+  font-size: 30px;
+}
+.header-text h1 {
+  font-size: 70px;
+  margin-top: 20px;
+}
+.header-text h1 span {
+  color: #fee715;
+}
+
+/* =========================================== Style the Typer writer effect =============================*/
+.typewriter {
+  width: fit-content;
+  text-align: left;
+  color: #e0a96d;
+}
+
+.typewriter h4 {
+  overflow: hidden;
+  border-right: 0.15em solid #ff004f;
+  white-space: nowrap;
+  margin-left: 1 auto;
+  letter-spacing: 0.1em;
+  animation: typing 2.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  60% {
+    border-color: #ff004f;
+  }
+}
+
+/* =========================================== Style the About Section =============================*/
+
+#about {
+  padding: 80px 0;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*-------------------------------- image column ------------- */
+.about-col-1 {
+  flex-basis: 35%;
+}
+.about-col-1 img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/*--------------------------------- text column ------------- */
+.about-col-2 {
+  flex-basis: 60%;
+}
+.sub-title {
+  font-size: 50px;
+  font-weight: 600;
+  color: #e0a96d;
+}
+.sub-title-para {
+  text-align: justify;
+}
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #fee715;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab-links.active-link::after {
+  width: 100%;
+}
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.tab-contents ul li span {
+  color: #e0a96d;
+  font-size: 14px;
+}
+.tab-contents {
+  display: none;
+}
+.tab-contents.active-tab {
+  display: block;
+}
+
+/* =========================================== Style the Education Section =============================*/
+#educations {
+  padding: 30px 0;
+}
+.education-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.education-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 20px;
+  transition: background-color 0.5s, transform 0.5s;
+}
+.education-list h2 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.education-list div i {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.education-list div a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.education-list div:hover {
+  background: #e0a96d;
+  transform: translateY(-10px);
+}
+
+/* =========================================== Style the Portfolio Section =============================*/
+
+#portfolio {
+  padding: 50px 0;
+}
+.sub-title1 {
+  color: #fee715;
+  text-align: center;
+}
+
+/* =========================================== Style the Project list =============================*/
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+/* =========================================== Style the project Section =============================*/
+.project {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.project img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.699), #e0a96d);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 0.8rem;
+  transition: height 0.5s;
+}
+.layer h3 {
+  font-weight: 800;
+  margin-bottom: 10px;
+  font: bolder;
+}
+.layer p {
+  margin-top: 10px;
+}
+.layer a {
+  margin-top: 20px;
+  color: #e0a96d;
+  text-decoration: none;
+  font-size: 0.8rem;
+  line-height: 40px;
+  background: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+}
+.project:hover img {
+  transform: scale(1.1);
+}
+.project:hover .layer {
+  height: 100%;
+}
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1.5px solid #e0a96d;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fa1d00;
+  background: #e0a96d;
+  transition: background-color 0.5s;
+  font-weight: 600;
+}
+.btn:hover {
+  background: rgb(224, 169, 109);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 169, 109, 1) 0%,
+    rgba(254, 231, 21, 1) 100%
+  );
+}
+/*---------------------- Contact me section-----------------------------*/
+#contact {
+  padding: 50px 0;
+}
+.contact-left {
+  flex-basis: 35%;
+}
+.contact-right {
+  flex-basis: 60%;
+}
+.contact-left p {
+  margin-top: 30px;
+}
+.contact-left p i {
+  color: #ababab;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a:hover {
+  color: #e0a96d;
+  transform: translateY(-7px);
+}
+.btn.btn2 {
+  display: inline-block;
+  background: rgb(254, 231, 21);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 231, 21, 1) 0%,
+    rgba(255, 0, 79, 1) 100%
+  );
+  color: #460353;
+  transition: transform 0.5s;
+  margin-top: 90px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+.btn.btn2:hover {
+  transform: translateY(-7px);
+}
+.btn.btn3 {
+  color: #ff004f;
+  display: inline-block;
+}
+.contact-right form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+form .btn3 {
+  background: rgb(224, 169, 109);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 169, 109, 1) 0%,
+    rgba(254, 231, 21, 1) 100%
+  );
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #460353;
+}
+
+/* =========================================== Style the copyright Section =============================*/
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background-color: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+/* =========================================== Style the css for small screen Section =============================*/
+
+nav .manu-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #header {
+    background-image: url(./assets/phone-background.png);
+  }
+
+  .header-text {
+    margin-top: 100%;
+    font-size: 16px;
+    margin-top: 350px;
+  }
+  .header-text h1 {
+    font-size: 30px;
+  }
+  .logo {
+    width: 100px;
+  }
+  nav .manu-icon {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: #e0a96d;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 150px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.6s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .manu-icon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .download-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .sub-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+  .about-col-1 {
+    margin-bottom: 30px;
+  }
+  .about-col-2 {
+    font-size: 14px;
+  }
+  .tab-links {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  .layer {
+    font-size: 11px;
+  }
+  .layer a {
+    margin-top: 10px;
+    color: #e0a96d;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 40px;
+    background: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  .projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+  .social-icons {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  .btn.btn3 {
+    display: flex;
+    align-items: center;
+  }
+  .copyright {
+    margin-bottom: 0;
+  }
+  .btn.btn3 {
+    background: rgb(254, 231, 21);
+    background: linear-gradient(
+      90deg,
+      rgba(254, 231, 21, 1) 0%,
+      rgba(255, 0, 79, 1) 100%
+    );
+    color: #460353;
+  }
+}
+#message {
+  color: #e0a96d;
+  margin-top: -40px;
+  display: block;
+}
